@@ -1,0 +1,26 @@
+@keyframes colorCycle {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes shadow-cycle {
+  0% {
+    box-shadow: 0 0 0.625rem #ec9406de;
+  }
+  25% {
+    box-shadow: 0 0 0.625rem var(--primary-200);
+  }
+  50% {
+    box-shadow: 0 0 0.625rem var(--primary-300);
+  }
+  75% {
+    box-shadow: 0 0 0.625rem var(--accent-100);
+  }
+  100% {
+    box-shadow: 0 0 0.625rem #ec9406de;
+  }
+}

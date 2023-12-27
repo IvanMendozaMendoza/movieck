@@ -1,0 +1,17 @@
+:root {
+  --primary-100: #1a237e;
+  --primary-200: #534bae;
+  --primary-300: #b8a6ff;
+  --accent-100: #00acc1;
+  --accent-200: #004f63;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #071a28;
+  --bg-200: #1e2530;
+  --bg-300: #353c48;
+}
+
+$screen-md-max: 61.9375em; // tab-land = 991px
+$screen-sm-max: 47.9375em; // tab-port = 767px
+$screen-xs-max: 26.5625em; // phone-large = 425px
+$phone-small: 21.875em; // phone-small = 350px

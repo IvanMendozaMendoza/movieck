@@ -1,0 +1,6 @@
+html {
+    @include respond-to(tab-land){ font-size: 68%; }
+    @include respond-to(tab-port){ font-size: 162.5%; }
+    @include respond-to(phone-large){ font-size: 150%; }
+    @include respond-to(phone-small){ font-size: 120%; }
+}

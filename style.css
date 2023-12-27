@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
   --primary-100: #1a237e;
   --primary-200: #534bae;
@@ -136,8 +139,9 @@ h1.header__logo-title {
 
 .title {
   grid-column: 1 / -1;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .classification,
@@ -231,28 +235,11 @@ h1.header__logo-title {
   animation: colorCycle 10s linear infinite;
 }
 
-/* media querys */
-@media only screen and (max-width: 768px){
-    html {
-        font-size: 68%;
-    }
-}
-@media only screen and (max-width: 767px){
-    html {
-        font-size: 162.5%;
-    }
-}
-@media only screen and (max-width: 425px){
-    html {
-        font-size: 125%;
-    }
-}
-@media only screen and (max-width: 350px){
-    html {
-        font-size: 125%;
-    }
-}
-
 /* .dark-mode body{
     background-color: #1a237e;
 } */
+@media only screen and (max-width: 350px){
+  html {
+      font-size: 120%;
+  }
+}
