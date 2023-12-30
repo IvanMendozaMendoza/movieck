@@ -1,6 +1,26 @@
 .card {
   overflow: hidden;
 }
+
+.shadow--normal {
+  overflow: hidden;
+  transition: transform .4s, box-shadow .2s;
+  
+  &:hover {
+    box-shadow: 0 0 15px rgba($color: #000000, $alpha: .8);
+    transform: scale(1.02);
+  }
+}
+
+.shadow--high {
+  overflow: hidden;
+  transition: transform .4s, animation .2s;
+  
+  &:hover {
+    animation: shadow-cycle 5s infinite;
+    transform: scale(1.02);
+  }
+}
 .movie-data {
   position: absolute;
   text-align: center; 
@@ -103,6 +123,7 @@
   );
   animation: colorCycle 10s linear infinite;
 }
+
 // for handlers events
 .bookmark,
 .play--enabled {
