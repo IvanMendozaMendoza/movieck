@@ -1,0 +1,15 @@
+{
+  "name": "movieck",
+  "version": "1.0.0",
+  "description": "movieck movie app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "author": "ivan mendoza mendoza",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

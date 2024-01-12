@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Font Size */
+  --fs-logo: 3.6rem;
+
+  /* Colors */
+  --background: rgb(32, 36, 42);
+  --white: #fff;
+  --item-color: hsl(219, 100%, 95%);
+
+  /* Gradients */
+  --on-surface: linear-gradient(
+    90deg,
+    rgba(224, 232, 230, 0.2),
+    rgba(255, 255, 255, 0.15)
+  );
+
+  --logo-color: linear-gradient(
+    90deg,
+    #ffffffa1,
+    #ffffffd8,
+    #ffffffa1,
+    #ffffffb6,
+    #ffffffba
+  );
+
+  /* Transitions */
+  --transition-short: 250ms;
+  --transition-long: 500ms;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans";
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #333; /* to modify make as variable*/
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(49, 48, 54, 0.421);
+  border-radius: 8px;
+}
+
+/* properties handled with js */
+.hidden {
+  display: none;
+}
+
+/* animations */
+@keyframes colorCycle {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* container of the content */
+.container {
+    width: 100%;
+    height: 100vh; 
+    position: static;
+    bottom: 0;
+    left: 0;
+    overflow-y: overlay;
+    transition: filter var(--transition-long);
+    
+}
+
+.container.active {
+  filter: blur(6px);
+}
