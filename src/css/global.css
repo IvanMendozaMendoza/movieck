@@ -5,7 +5,6 @@
   --fs-logo: 3.6rem;
 
   /* Colors */
-  --background: rgb(32, 36, 42);
   --white: #fff;
   --item-color: hsl(219, 100%, 95%);
 
@@ -45,13 +44,14 @@ html {
 body {
   font-family: "DM Sans";
   box-sizing: border-box;
+  background-color: #141A1E;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #333; /* to modify make as variable*/
+  color: #D8D4CF; /* to modify make as variable*/
 }
 
 input,
@@ -91,7 +91,8 @@ button {
 /* container of the content */
 .container {
     width: 100%;
-    height: 100vh; 
+    min-height: 100vh; 
+    max-height: 100vh; 
     position: static;
     bottom: 0;
     left: 0;
@@ -101,5 +102,32 @@ button {
 }
 
 .container.active {
-  filter: blur(6px);
+  filter: blur(5px);
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.search-wrapper::before,
+.load-more::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--white);
+  border-radius: 24px;
+  border-inline-end-color: transparent;
+  animation: loading 0.5s linear infinite;
+  display: none;
+}
+
+.search-wrapper::before {
+  position: absolute;
+  top: 10px;
+  right: 55px;
 }

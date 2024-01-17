@@ -23,6 +23,8 @@ const toggleSearchOnSmallDevices = function () {
   const logo = document.querySelector(".logo");
   if (sidebar.classList.contains("active")) {
     sidebar.classList.remove("active");
+    const container = document.querySelector(".container");
+    container.classList.toggle("active");
     toggleMenu();
   }
   menuBtn.classList.toggle("hidden");
@@ -43,7 +45,7 @@ function toggleSearch() {
 menuBtn.addEventListener("click", function () {
   toggleMenu();
   sidebar.classList.toggle("active");
-  const s = document.querySelector('.container');
-  s.classList.toggle('active')
+  const container = document.querySelector(".container");
+  container.classList.toggle("active");
 });
 searchBtn.addEventListener("click", toggleSearch);

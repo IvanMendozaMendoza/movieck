@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="movieck - search movies catalogue" />
+    <meta
+      name="description"
+      content="movieck allows you to search a catalogue of popular and latest movie releases. 
+      Get details like cast, ratings, reviews and more for your favorite movies."
+    />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/imgs/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./src/imgs/favicon-64x64.png"
+    />
+
+    <!-- local resources -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
+    <script defer src="./src/js/index.js"></script>
+
+    <title>Movieck - search movies catalogue</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="./src/imgs/logo-official-1.svg"
+          alt="movieck - logo"
+          width="43"
+          height="43"
+          loading="eager"
+        />
+        <h2>Movieck</h2>
+      </a>
+
+      <div class="search">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            name="search"
+            aria-label="search movies"
+            autocomplete="off"
+            placeholder="search any movie"
+            class="input-field"
+          />
+        </div>
+      </div>
+
+      <button class="search-btn">
+        <div class="search-icon"></div>
+      </button>
+
+      <button class="menu-btn">
+        <img
+          src="./src/imgs/menu.png"
+          alt="menu"
+          height="37"
+          width="37"
+          class="menu"
+          loading="lazy"
+        />
+        <img
+          src="./src/imgs/menu-close.png"
+          alt="menu"
+          height="37"
+          width="37"
+          class="close hidden"
+          loading="lazy"
+        />
+      </button>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-list">
+          <p class="list-title">Genre</p>
+
+          <a href="list.html" class="list-item">action</a>
+          <a href="list.html" class="list-item">adventure</a>
+          <a href="list.html" class="list-item">animation</a>
+          <a href="list.html" class="list-item">biography</a>
+          <a href="list.html" class="list-item">comedy</a>
+          <a href="list.html" class="list-item">crime</a>
+          <a href="list.html" class="list-item">documentary</a>
+          <a href="list.html" class="list-item">drama</a>
+          <a href="list.html" class="list-item">family</a>
+          <a href="list.html" class="list-item">fantasy</a>
+          <a href="list.html" class="list-item">history</a>
+          <a href="list.html" class="list-item">horror</a>
+          <a href="list.html" class="list-item">music</a>
+          <a href="list.html" class="list-item">musical</a>
+          <a href="list.html" class="list-item">mystery</a>
+          <a href="list.html" class="list-item">romance</a>
+          <a href="list.html" class="list-item">sci-fi</a>
+          <a href="list.html" class="list-item">sport</a>
+          <a href="list.html" class="list-item">thriller</a>
+          <a href="list.html" class="list-item">war</a>
+        </div>
+
+        <div class="sidebar-list">
+          <p class="list-title">Languages</p>
+
+          <a href="#" class="list-item">spanish</a>
+          <a href="#" class="list-item">english</a>
+        </div>
+
+        <div class="sidebar-contact">
+          <p class="copyright">
+            © 2024 Ivan Mendoza Mendoza. <br />
+            All rights reserved.
+          </p>
+          <a href="#" class="github-link">
+            <img
+              src="./src/imgs/github-mark-white.png"
+              alt="github link"
+              height="35"
+              width="35"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <article class="container" page-content>
+        <section class="movie-list genre-list" aria-label="fantasy movies">
+            <div class="title-wrapper">
+                <h1 class="heading">All fantasy Movies</h1>  
+              </div>
+              
+              <div class="grid-list">
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+              </div>
+              
+              <button class="btn load-more" load-more>
+                Load More  
+              </button>
+        </section>
+
+        <div class="search-modal active">
+            <p class="label">Results for</p>
+            <h1 class="heading">Piratas del caribe</h1>
+   
+          <div class="movie-list">
+            <div class="grid-list">
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div><div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div><div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div><div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div><div class="movie-card">
+                    <figure class="poster-box card-banner">
+                      <img
+                        src="./src/imgs/slider-control.jpg"
+                        alt="Puss in Boots: The Last Wish"
+                        class="img-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+      
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+      
+                    <div class="meta-list">
+                      <div class="meta-item">
+                        <img
+                          src="./src/imgs/Star 1.svg"
+                          alt="rating"
+                          with="20"
+                          height="20"
+                          loading="lazy"
+                        />
+      
+                        <span class="span">8.5</span>
+                      </div>
+      
+                      <div class="card-badge">07/3005</div>
+                    </div>
+      
+                    <a
+                      href="./detail.html"
+                      title="Puss in Boots: The Last Wish"
+                      class="card-btn"
+                    ></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </article>
+  </body>
+</html>
