@@ -198,7 +198,7 @@
       height: 5px;
       width: 5px;
       border-radius: 50%;
-      transform: translate(15px, 10px);
+      transform: translate(10px, 10px);
       background-color: var(--white);
     }
   }
@@ -798,7 +798,7 @@ here
   left: 0;
   width: 100%;
   height: 150px;
-  background-image: linear-gradient( 180deg, hsla(250, 13%, 11%, 0), hsla(250, 13%, 11%, 1));
+  background-image: linear-gradient( 180deg, rgba(18, 23, 26, 0), rgba(18, 23, 26, .9));
   z-index: 1;
   pointer-events: none;
 }
