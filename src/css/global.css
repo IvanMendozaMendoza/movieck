@@ -3,10 +3,40 @@
 :root {
   /* Font Size */
   --fs-logo: 3.6rem;
+  --fs-heading: 4.8rem;
+  --fs-title-lg: 3rem;
+  --fs-list-title: 2.3rem;
+  --fs-title: 2rem;
+  --fs-list-item: 1.8rem;
+  --fs-medium: 1.7rem;
+  --fs-regular: 1.6rem;
+  --fs-badge: 1.5rem;
+  --fs-copyright: 1.2rem;
+
+  /* Font weight */
+  --fw-smaller: 200;
+  --fw-small: 300;
+  --fw-md: 400;
+  --fw-bold: 600;
+  --fw-bolder: 700;
 
   /* Colors */
   --white: #fff;
+  --black: #000;
+
+  --text-color: #d8d4cf;
+  --heading-color: #e8e6e3;
+  --input-color-shdw: rgba(255, 255, 255, 0.8);
+  --list-nm-color: rgb(149, 148, 153);
+  --list-item-active: rgba(229, 238, 255, 0.5); 
   --item-color: hsl(219, 100%, 95%);
+  --bg-nav: rgba(18, 23, 26, 0.8);
+  --modal-bg: #141a1e;
+  --poster-bg: hsla(250, 6%, 20%, 1);
+  --badge-color: rgba(29, 28, 28, 0.6);
+  --btn-color: hsla(350, 67%, 39%, 0.9);
+  --btn-color-active: hsla(349, 69%, 51%, 1);
+  --btn-color-load: hsla(349, 69%, 51%, 1);
 
   /* Gradients */
   --on-surface: linear-gradient(
@@ -14,14 +44,30 @@
     rgba(224, 232, 230, 0.2),
     rgba(255, 255, 255, 0.15)
   );
+  --shadow-container: linear-gradient(
+    180deg,
+    rgba(18, 23, 26, 0),
+    rgba(18, 23, 26, 0.9)
+  );
+  --shadow-cover: linear-gradient(
+    90deg,
+    rgba(18, 23, 26, 1),
+    rgba(18, 23, 26, 0.4),
+    rgba(18, 23, 26, 0.1)
+  );
+  --shadow-backdrop: linear-gradient(
+    0deg,
+    hsla(250, 11%, 13%, 0.9),
+    hsla(250, 11%, 13%, 0.8)
+  );
 
   --logo-color: linear-gradient(
     90deg,
-    #ffffffa1,
-    #ffffffd8,
-    #ffffffa1,
-    #ffffffb6,
-    #ffffffba
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.6)
   );
 
   /* Transitions */
@@ -29,6 +75,9 @@
   --transition-long: 500ms;
 }
 
+/* ------------ */
+/* Global Reset */
+/* ------------ */
 *,
 *::before,
 *::after {
@@ -44,14 +93,14 @@ html {
 body {
   font-family: "DM Sans";
   box-sizing: border-box;
-  background-color: #141A1E;
+  background-color: #141a1e;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #D8D4CF; /* to modify make as variable*/
+  color: var(--text-color);
 }
 
 input,
@@ -72,12 +121,9 @@ button {
   border-radius: 8px;
 }
 
-/* properties handled with js */
-.hidden {
-  display: none;
-}
-
+/* ---------- */
 /* animations */
+/* ---------- */
 @keyframes colorCycle {
   0%,
   100% {
@@ -86,23 +132,6 @@ button {
   50% {
     background-position: 100% 50%;
   }
-}
-
-/* container of the content */
-.container {
-    width: 100%;
-    min-height: 100vh; 
-    max-height: 100vh; 
-    position: static;
-    bottom: 0;
-    left: 0;
-    overflow-y: overlay;
-    transition: filter var(--transition-long);
-    
-}
-
-.container.active {
-  filter: blur(5px);
 }
 
 @keyframes loading {
@@ -114,20 +143,74 @@ button {
   }
 }
 
-.search-wrapper::before,
-.load-more::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--white);
-  border-radius: 24px;
-  border-inline-end-color: transparent;
-  animation: loading 0.5s linear infinite;
+/* ------------ */
+/* Js triggers */
+/* ------------ */
+.load-more.loading::before {
+  display: block;
+}
+.search-wrapper.searching::before {
+  display: block;
+}
+.hidden {
   display: none;
 }
 
-.search-wrapper::before {
-  position: absolute;
-  top: 10px;
-  right: 55px;
+/* container of the content */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  position: static;
+  bottom: 0;
+  left: 0;
+  overflow-y: overlay;
+  transition: filter var(--transition-long);
+}
+
+.container.active {
+  filter: blur(5px);
+}
+
+/* ---------- */
+/* typography */
+/* ---------- */
+
+.heading {
+  font-size: var(--fs-heading);
+  color: var(--heading-color);
+  line-height: 1.2;
+}
+
+.title {
+  color: var(--item-color);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
+
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-block: 8px 4px;
+}
+
+.list-title {
+  color: var(--white);
+  font-size: var(--fs-list-title);
+  font-weight: var(--fw-bold);
+  margin-block-end: 0.5rem;
+}
+
+.title-wrapper {
+  margin-block-end: 24px;
+  margin-inline-start: 3.6rem;
+}
+
+.title-large {
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: var(--fs-title-lg);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
 }
