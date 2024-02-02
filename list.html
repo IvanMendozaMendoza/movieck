@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="movieck - search movies catalogue" />
+    <meta
+      name="description"
+      content="movieck allows you to search a catalogue of popular and latest movie releases. 
+      Get details like cast, ratings, reviews and more for your favorite movies."
+    />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/imgs/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./src/imgs/favicon-64x64.png"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+  />
+
+    <!-- --------------- -->
+    <!-- local resources -->
+    <!-- --------------- -->
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
+
+    <!-- script -->
+    <script defer type="module" src="./src/js/controller.js"></script>
+
+    <title>Movieck - search movies catalogue</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="./src/imgs/logo-official-1.svg"
+          alt="movieck - logo"
+          width="43"
+          height="43"
+          loading="eager"
+        />
+        <h2>Movieck</h2>
+      </a>
+
+      <div class="search">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            name="search"
+            aria-label="search movies"
+            autocomplete="off"
+            placeholder="search any movie"
+            class="input-field"
+          />
+        </div>
+      </div>
+
+      <button class="search-btn">
+        <div class="search-icon"></div>
+      </button>
+
+      <button class="menu-btn">
+        <img
+          src="./src/imgs/menu.png"
+          alt="menu"
+          height="37"
+          width="37"
+          class="menu"
+          loading="lazy"
+        />
+        <img
+          src="./src/imgs/menu-close.png"
+          alt="menu"
+          height="37"
+          width="37"
+          class="close hidden"
+          loading="lazy"
+        />
+      </button>
+    </header>
+
+    <nav class="sidebar"></nav>
+
+    <article class="container" id="page-list"></article>
+  </body>
+</html>
