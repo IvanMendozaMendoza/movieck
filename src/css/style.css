@@ -2,7 +2,7 @@
 /* HEADER */
 /* ------ */
 .header {
-  background-color: var(--bg-nav);
+  background-image: var(--bg-header);
   position: absolute;
   top: 0;
   left: 0;
@@ -13,6 +13,11 @@
   padding-inline: 3rem;
   padding-block: 1.2rem;
   z-index: 10;
+}
+
+.header.searching {
+  /* background-color: var(--modal-bg) !important; */
+  background-color: var(--modal-bg);
 }
 
 .logo {
@@ -175,6 +180,7 @@
   font-size: var(--fs-medium);
   font-weight: var(--fw-small);
 }
+
 .banner-slider .meta-item,
 .movie-detail .meta-item {
   &:not(:last-child) {
@@ -219,6 +225,8 @@
   font-size: var(--fs-medium);
   line-height: 1.6;
   max-width: 48rem;
+  max-height: 25rem;
+  overflow: auto;
   margin-bottom: 3rem;
 }
 
@@ -288,8 +296,8 @@
 
   &:hover {
     color: var(--white);
-    text-shadow: 0 0 18px var(--list-item-active);
-    transform: scale(1.07);
+    text-shadow: 0 0 10px var(--list-item-active);
+    transform: scale(1.05);
   }
 }
 
@@ -322,6 +330,7 @@
   width: 100%;
   height: 100%;
   filter: brightness(0.9);
+  transition: all var(--transition-long);
 
   &::after {
     content: "";
@@ -432,7 +441,7 @@
   }
 }
 .poster-box {
-  background-image: url("../images/poster-bg-icon.png");
+  background-image: url("../imgs/poster-bg-icon.png");
   aspect-ratio: 2 / 3;
 }
 .movie-card {
@@ -588,6 +597,7 @@
     top: 0;
   }
   .movie-detail .slider-list {
+    max-width: 48vw;
     margin-inline-start: 0;
     border-radius: var(--radius-16) 0 0 var(--radius-16);
   }
@@ -669,6 +679,7 @@
   overflow-y: overlay;
   z-index: 4;
   display: none;
+
 
   .label {
     color: var(--btn-color-active);
@@ -770,7 +781,7 @@
   /* Home page */
   .banner-content {
     right: auto;
-    max-width: 500px;
+    max-width: 600px;
   }
 
   .slider-control {
@@ -801,4 +812,16 @@
   .slider-control {
     left: calc(100% - 300px);
   }
+}
+
+.top-rated {
+  font-size: 3rem;
+  border-radius: 4px;
+  background:var(--top-rated);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: colorCycle 4s linear infinite;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }

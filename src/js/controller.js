@@ -1,51 +1,53 @@
 "use strict";
-// HEADER VIEW
-const sidebar = document.querySelector(".sidebar");
+import base from "./views/baseView.js";
+import Banner from "./views/bannerView.js";
+import HomePages from "./views/homePagesView.js";
+import Sidebar from "./views/sidebar.js";
+import MovieList from "./views/movieListView.js";
+import { getMovieListByCategory } from "./model.js";
+import Search from "./views/searchView.js";
+import DetailPage from "./views/detailPageView.js";
 
-const menu = document.querySelector(".menu");
-const menuBtn = document.querySelector(".menu-btn");
-const menuClose = document.querySelector(".close");
+import {
+  movieDB,
+  getGenreList,
+  getPopularMovies,
+  getHomePageMovieLists,
+  getMovieListBySearching,
+  getMovieById,
+  getSugestedMovies
+} from "./model.js";
 
-const search = document.querySelector(".search");
-const searchBtn = document.querySelector(".search-btn");
-const searchIcon = document.querySelector(".search-icon");
 
-const toggleMenu = function () {
-  menu.classList.toggle("hidden");
-  menuClose.classList.toggle("hidden");
-};
+// const html = document.querySelector("html");
+// html.innerHTML = "";
 
-function isSmallScreen() {
-  return window.matchMedia("(max-width: 650px)").matches;
+async function init() {
+  try {
+    await getPopularMovies();
+    await getHomePageMovieLists();
+    await getGenreList();
+
+    // Sidebar
+    const sidebar = new Sidebar(movieDB);
+    const search = new Search(getMovieListBySearching);
+
+
+    // Home
+    const banner = new Banner(movieDB);
+    const homePages = new HomePages(movieDB);
+
+    // List
+    const movieList = new MovieList(getMovieListByCategory);
+
+    // Detail
+    const movieDetail = new DetailPage(getMovieById, getSugestedMovies);
+
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 }
 
-const toggleSearchOnSmallDevices = function () {
-  const logo = document.querySelector(".logo");
-  if (sidebar.classList.contains("active")) {
-    sidebar.classList.remove("active");
-    const container = document.querySelector(".container");
-    container.classList.toggle("active");
-    toggleMenu();
-  }
-  menuBtn.classList.toggle("hidden");
-  searchBtn.classList.toggle("search-btn--animation");
-  logo.classList.toggle("hidden");
-};
-
-function toggleSearch() {
-  searchIcon.classList.toggle("active");
-  const inputField = document.querySelector(".input-field");
-  if (isSmallScreen()) {
-    toggleSearchOnSmallDevices();
-  }
-  search.classList.toggle("active");
-  inputField.focus();
-}
-
-menuBtn.addEventListener("click", function () {
-  toggleMenu();
-  sidebar.classList.toggle("active");
-  const container = document.querySelector(".container");
-  container.classList.toggle("active");
-});
-searchBtn.addEventListener("click", toggleSearch);
+// Call the init function or perform other actions
+init();
