@@ -1,4 +1,4 @@
-export const API_KEY = "f335a17fdfee834138662fea179d0d9d";
+export const API_KEY = "Ups you need an API key 👻";
 export const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
 export const POPULAR_MOVIES_PATH = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=1`;
 export const UPCOMING_MOVIES_PATH = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&page=1`;
