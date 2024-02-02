@@ -1032,13 +1032,7 @@ exports.default = HomePages;
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../helpers":"hGI1E"}],"4E4XX":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getMovieList", ()=>getMovieList);
 var _helpers = require("../helpers");
-const getMovieList = function(urlParam, genreName) {
-    window.localStorage.clear();
-    window.localStorage.setItem("genreName", genreName);
-    window.localStorage.setItem("urlParam", urlParam);
-};
 class Sidebar {
     #genres;
     #parentElement = document.querySelector(".sidebar");

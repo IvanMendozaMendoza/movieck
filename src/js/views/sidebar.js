@@ -1,9 +1,4 @@
 import { getMovieList } from "../helpers";
-export const getMovieList = function (urlParam, genreName) {
-  window.localStorage.clear();
-  window.localStorage.setItem("genreName", genreName);
-  window.localStorage.setItem("urlParam", urlParam);
-};
 
 export default class Sidebar {
   #genres;
