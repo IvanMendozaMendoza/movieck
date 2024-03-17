@@ -3,6 +3,9 @@
 ## Overview
 The Movie Catalog Website is an online platform designed to provide users with a comprehensive collection of movies. It serves as a centralized hub where users can explore, search, and discover various films from different genres, eras, and languages. Whether users are looking for classic masterpieces, recent blockbusters, or hidden gems, the Movie Catalog Website aims to cater to diverse tastes and preferences.
 
+![image](https://github.com/IvanMendozaMendoza/movieck/assets/124617387/acc7763f-9b0d-48fa-bd35-a05b0d6b3eac)
+
+
 ## Features
 1. **Search Functionality**: Users can easily search for specific movies by title, genre, director, actor, or keyword. The search function enhances user experience by enabling quick access to desired films.
 
